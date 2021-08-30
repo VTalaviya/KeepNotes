@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: #f4f7f8;
+    font-family: "Popince",sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading{
+    width: 100vw;
+    height: 5rem;
+    background-color: #f1c40f;
+    color: #282936;
+    box-shadow: 0 10px 16px rgb(248,247,247);
+}
+.heading h1{
+    line-height: 5.5rem;
+    margin-left: 2rem;
+    font-weight: 600;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: #f1c40f;
+    border: none;
+    color: #282936;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 88vw;
+    margin-top: 2rem;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .note{
+      width: 300px;
+      height: 200px;
+      border: none;
+      overflow-y: scroll;
+      box-shadow: 0 5px 8px grey;
+      margin: 30px 20px;
+      background-color: #fff;
+  }
+  /* .note.tools{
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem;
+  } */
+  .note.tools button{
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      cursor:pointer;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+  }
+  .note textarea{
+      outline: none;
+      font-family: inherit;
+      font-size: 1.2rem;
+      border: none;
+      height: 300px;
+      width: 100%;
+      padding: 20px;
+  }
+  .fa-edit,
+  .fa-trash-alt{
+      background-color:#2ecc71 ;
+      color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+  }
+  .fa-trash-alt{
+      background-color: #e74c3c;
+  }
+  .fa-edit:hover{
+      color:#2ecc71 ;
+      background-color: #fff ;
+      filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+  }
+  .fa-trash-alt:hover{
+    color: #e74c3c;
+    background-color:#fff;
+    filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+  }
+  .edit,.delete{
+      border: none;
+      float: right;
+      margin: 2px;
+  }
+  .main{
+      padding: 20px;
+  }
+  .hidden{
+      display: none;
+  }
